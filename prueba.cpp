@@ -1,9 +1,11 @@
 #include<iostream>
 using namespace std;
-/*objeto: coleccion de caracteristicas y acciones. 
+/* ---------------------------------ARCHIVO DE REPASO DE POO EN C++, SIN CONSTRUCOTRES------------------------------
+objeto: coleccion de caracteristicas y acciones. 
 acciones: funciones que el objeto puede realizar, se definen dentro de la clase.
 clase: plantilla que define un objeto, contiene las caracteristicas y acciones del objeto.
-caracteristicas: son ateributos del objeto  */
+caracteristicas: son ateributos del objeto  
+*/
 
 class Humano {
     /*cuando declaramos un atributo en "public" quiere decir que cualquier persona desde fuera de las llaves de la clase.
@@ -21,29 +23,13 @@ class Humano {
         cout << "Esta persona esta tomando" << endl;
       }
 
-        void dormir(){
-            cout << "Esta persona esta durmiendo" << endl;
-        }
-};
-
-class Automoviles {
-    public:
-      string marca = " ";
-      string modelo = " ";
-      int anio;
-
-      void acelerar(){
-        cout << "El auto esta acelerando" << endl;
+      void dormir(){
+        cout << "Esta persona esta durmiendo" << endl;
       }
 
-      void frenar(){
-        cout << "El auto esta frenando" << endl;
-      }
-
-        void girar(){
-            cout << "El auto esta girando" << endl;
-        }
 };
+
+
 
 int main(){
 
@@ -59,7 +45,7 @@ int main(){
     cout << "Ingrese la clase del personaje: ";
     cin >> persona1.clase; //accedemos al atributo clase del objeto persona1
     cout << "Ingrese la edad del personaje: ";
-    cin >> persona1.edad;
+    cin >> persona1.edad; 
     
     cout << "Nombre: " << persona1.nombre << endl;
     cout << "Clase: " << persona1.clase << endl;
